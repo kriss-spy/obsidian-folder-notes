@@ -11,7 +11,8 @@
 		"fv-build": "tsc -noEmit -skipLibCheck && node ./src/obsidian-folder-overview/esbuild.config.mjs production",
 		"version": "node version-bump.mjs && git add manifest.json versions.json",
 		"folder-overview": "node ./src/obsidian-folder-overview/esbuild.config.mjs",
-		"fv-dev": "npm run folder-overview"
+		"fv-dev": "npm run folder-overview",
+		"test": "node --test tests/*.test.cjs src/obsidian-folder-overview/tests/*.test.cjs"
 	},
 	"keywords": [],
 	"author": "Lost Paul",
