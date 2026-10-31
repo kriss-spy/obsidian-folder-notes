@@ -17,11 +17,3 @@ Join the Discord server to chat about the beta and to also get the beta user rol
 
 ## Discord server
 [For regular updates on Folder Notes and my other plugins, join the Discord server to get notified and participate in discussions.](https://discord.gg/4UQEDfQmuH)
-
-### Overview lifecycle regression tests
-
-After `git submodule update --init --recursive` and `npm ci`, run `npm test` to
-check the Folder Notes block processor and the embedded overview lifecycle.
-These tests use a synthetic Obsidian host and deterministic timers, without
-opening or modifying a vault. Run `npm run fn-build` and `npm run fv-build` to
-check TypeScript and build both production entry points.
